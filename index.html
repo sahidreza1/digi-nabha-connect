@@ -1,25 +1,228 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nabha Digital Learning - Empowering Rural Education</title>
-    <meta name="description" content="Bridging the digital education gap in rural Punjab with offline-capable learning, local language support, and tools designed for government schools in Nabha and surrounding areas." />
-    <meta name="author" content="Nabha Digital Learning Platform" />
-    <meta name="keywords" content="rural education, digital learning, Punjab education, offline learning, government schools, Nabha, educational technology" />
+    <meta name="description" content="Bridging the digital education gap in rural Punjab with offline-capable learning, local language support, and tools designed for government schools in Nabha and surrounding areas.">
+    <meta name="keywords" content="rural education, digital learning, Punjab education, offline learning, government schools, Nabha, educational technology">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Nabha Digital Learning - Empowering Rural Education">
+    <meta property="og:description" content="Bridging the digital education gap in rural Punjab with offline-capable learning, local language support, and tools designed for government schools.">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <i data-lucide="graduation-cap" class="logo-icon"></i>
+                    <div class="logo-text">
+                        <h1 class="logo-title">Nabha Digital Learning</h1>
+                        <p class="logo-subtitle">Empowering Rural Education</p>
+                    </div>
+                </div>
 
-    <meta property="og:title" content="Nabha Digital Learning - Empowering Rural Education" />
-    <meta property="og:description" content="Bridging the digital education gap in rural Punjab with offline-capable learning, local language support, and tools designed for government schools." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+                <nav class="nav-desktop">
+                    <a href="#classes" class="nav-link">
+                        <i data-lucide="book-open"></i>
+                        Classes
+                    </a>
+                    <a href="#teacher" class="nav-link">
+                        <i data-lucide="users"></i>
+                        Teacher Dashboard
+                    </a>
+                    <button class="btn-secondary btn-sm">Login</button>
+                </nav>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+                <button class="btn-ghost nav-mobile" id="mobile-menu-btn">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            Bridging the Digital
+                            <span class="accent-text">Education Gap</span>
+                        </h1>
+                        <p class="hero-description">
+                            Empowering rural students in Nabha with offline-capable digital learning, 
+                            local language support, and tools designed for low-connectivity environments.
+                        </p>
+                    </div>
+
+                    <div class="feature-grid">
+                        <div class="feature-item">
+                            <i data-lucide="wifi-off" class="feature-icon"></i>
+                            <span>Offline Learning</span>
+                        </div>
+                        <div class="feature-item">
+                            <i data-lucide="languages" class="feature-icon"></i>
+                            <span>Local Languages</span>
+                        </div>
+                        <div class="feature-item">
+                            <i data-lucide="smartphone" class="feature-icon"></i>
+                            <span>Low-end Device Support</span>
+                        </div>
+                        <div class="feature-item">
+                            <i data-lucide="users" class="feature-icon"></i>
+                            <span>Teacher Dashboard</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <button class="btn-accent btn-lg">
+                            Start Learning
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+                        <button class="btn-outline btn-lg">
+                            Teacher Access
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?w=800&h=600&fit=crop&crop=center" alt="Students learning with digital devices in rural classroom" class="hero-img">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Class Selection -->
+    <section class="class-section" id="classes">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Choose Your Class</h2>
+                <p class="section-description">
+                    Access comprehensive digital learning materials tailored for each grade level, 
+                    designed to work seamlessly with limited connectivity.
+                </p>
+            </div>
+
+            <div class="class-grid" id="class-grid">
+                <!-- Classes will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Built for Rural Education</h2>
+                <p class="section-description">
+                    Our platform addresses the unique challenges faced by government schools in Nabha and surrounding rural areas, 
+                    ensuring quality education reaches every student.
+                </p>
+            </div>
+
+            <div class="features-grid" id="features-grid">
+                <!-- Features will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Section -->
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i data-lucide="graduation-cap" class="footer-logo"></i>
+                        <div>
+                            <h3 class="footer-brand-title">Nabha Digital Learning</h3>
+                            <p class="footer-brand-subtitle">Empowering Rural Education</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Bridging the digital education gap in rural Punjab through accessible, 
+                        offline-capable learning solutions designed for government schools.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h4 class="footer-section-title">Quick Links</h4>
+                    <nav class="footer-nav">
+                        <a href="#classes" class="footer-link">All Classes</a>
+                        <a href="#features" class="footer-link">Features</a>
+                        <a href="#teacher" class="footer-link">Teacher Portal</a>
+                        <a href="#support" class="footer-link">Support</a>
+                        <a href="#download" class="footer-link">Download App</a>
+                    </nav>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h4 class="footer-section-title">Contact</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i data-lucide="map-pin" class="contact-icon"></i>
+                            <span>Nabha, Punjab, India</span>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="phone" class="contact-icon"></i>
+                            <span>+91 XXXXX XXXXX</span>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="mail" class="contact-icon"></i>
+                            <span>info@nabhadigital.edu</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Partnership & Social -->
+                <div class="footer-section">
+                    <h4 class="footer-section-title">Connect</h4>
+                    <p class="partnership-text">
+                        In partnership with Punjab Education Department
+                    </p>
+                    <div class="social-links">
+                        <button class="social-btn">
+                            <i data-lucide="facebook"></i>
+                        </button>
+                        <button class="social-btn">
+                            <i data-lucide="twitter"></i>
+                        </button>
+                        <button class="social-btn">
+                            <i data-lucide="youtube"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2024 Nabha Digital Learning Platform. All rights reserved. | 
+                    <span class="accent-text">Empowering Rural Education</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
 </html>
