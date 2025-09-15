@@ -202,21 +202,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Function to handle class navigation
 function navigateToClass(grade) {
-    // Here you can add your navigation logic
-    // For example, redirect to a specific HTML file or external link
-    
-    // Example implementations:
-    
-    // Option 1: Navigate to separate HTML files
-    // window.location.href = `class-${grade}.html`;
-    
-    // Option 2: Navigate to external links
-    // window.open(`https://your-learning-platform.com/class-${grade}`, '_blank');
-    
-    // Option 3: Show an alert (current implementation for demo)
-    alert(`Navigate to Class ${grade}!\n\nYou can replace this with:\n- Link to class-${grade}.html\n- External URL\n- Open a modal\n- Any custom functionality`);
-    
-    // You can replace the alert above with your preferred navigation method
+    // Navigate to class8.html for Class 8
+    if (grade === "8") {
+        window.location.href = "class8.html";
+    } else {
+        // Show alert for other classes (you can add more specific navigation later)
+        alert(`Navigate to Class ${grade}!\n\nYou can replace this with:\n- Link to class-${grade}.html\n- External URL\n- Open a modal\n- Any custom functionality`);
+    }
 }
 
 // Function to add animation effects

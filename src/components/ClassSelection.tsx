@@ -112,8 +112,11 @@ const ClassSelection = () => {
                   <Button 
                     className="w-full bg-primary hover:bg-primary-dark text-primary-foreground shadow-button transition-smooth"
                     onClick={() => {
-                      // Here you can add navigation to specific class page
-                      console.log(`Navigate to Class ${classItem.grade}`);
+                      if (classItem.grade === "8") {
+                        window.location.href = "class8.html";
+                      } else {
+                        console.log(`Navigate to Class ${classItem.grade}`);
+                      }
                     }}
                   >
                     Enter Class {classItem.grade}
