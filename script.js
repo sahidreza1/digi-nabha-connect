@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             icon: "languages",
             title: "Local Language Support", 
-            description: "Content available in Punjabi, Hindi, and English to ensure better comprehension for rural students.",
+            description: "Content available in Hindi and English to ensure better comprehension for rural students.",
             color: "#10b981"
         },
         {
