@@ -202,13 +202,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Function to handle class navigation
 function navigateToClass(grade) {
-    // Navigate to class8.html for Class 8
-    if (grade === "8") {
-        window.location.href = "class8.html";
-    } else {
-        // Show alert for other classes (you can add more specific navigation later)
-        alert(`Navigate to Class ${grade}!\n\nYou can replace this with:\n- Link to class-${grade}.html\n- External URL\n- Open a modal\n- Any custom functionality`);
-    }
+    // Navigate to respective HTML file for each class
+    window.location.href = `class${grade}.html`;
 }
 
 // Function to add animation effects
