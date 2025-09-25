@@ -375,6 +375,11 @@ body {
     cursor: pointer;
     overflow: hidden;
     border: 1px solid #e2e8f0;
+    height: 320px;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
 }
 
 .class-card:hover {
@@ -388,6 +393,10 @@ body {
 
 .class-content {
     padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .class-info {
@@ -430,6 +439,7 @@ body {
 
 .subjects-section {
     margin-bottom: 1.5rem;
+    flex: 1;
 }
 
 .subjects-title {
